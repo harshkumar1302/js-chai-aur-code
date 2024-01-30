@@ -4,13 +4,13 @@
 // console.log("S");
 // console.log("H");
 
-function sayMyName() {
-    console.log("H");
-    console.log("A");
-    console.log("R");
-    console.log("S");
-    console.log("H");
-}
+// function sayMyName() {
+//     console.log("H");
+//     console.log("A");
+//     console.log("R");
+//     console.log("S");
+//     console.log("H");
+// }
 
 // sayMyName; // just reference
 // sayMyName(); // function execution
@@ -55,19 +55,61 @@ function sayMyName() {
 
 // function loginMessage(username) {
 //     // if (username === undefined)
-//     if (!username) { // here this line says it username is not true then execute the if scope code 
+//     if (!username) { // here this line says it username is not true then execute the if scope code
 //         console.log("Please enter a valid username")
 //         return;
 //     }
 //     return `${username} just logged in`
 // }
-function loginMessage(username = "sam") { // giving it a default value in the parameters which can be overridden when value passed in argument
-    if (!username) {
-        console.log("Please enter a valid username")
-        return;
-    }
-    return `${username} just logged in`
+// function loginMessage(username = "sam") { // giving it a default value in the parameters which can be overridden when value passed in argument
+//     if (!username) {
+//         console.log("Please enter a valid username")
+//         return;
+//     }
+//     return `${username} just logged in`
+// }
+
+// // console.log(loginMessage());
+// console.log(loginMessage("Kumar"));
+
+
+
+// function calculateCartPrice(...num1) { //... here it is rest operator
+//     return num1;
+// }
+// console.log(calculateCartPrice(233, 599, 99, 4789));
+
+// function calculateCartPrice1(val1, val2, ...num1) {
+//     return num1;
+// }
+
+// console.log(calculateCartPrice1(233, 599, 99, 4789));
+
+
+const obj1 = {
+    productName: "shampoo",
+    price: 897
 }
 
-// console.log(loginMessage());
-console.log(loginMessage("Kumar"));
+function cartBill(anyobject) {
+    console.log(`Your item ${anyobject.productName} costs ${anyobject.price}`)
+}
+
+// cartBill(obj1);
+
+cartBill({
+    productName: "notebook",
+    price: 569
+});
+
+
+
+const myNewArray = [1, 5, 78, 9, 4];
+
+function returnSecondValue(getArray) {
+    return getArray[2];
+}
+
+// console.log(returnSecondValue([12, 45, 7, 9, 2, 72]));
+console.log(returnSecondValue(myNewArray))
+
