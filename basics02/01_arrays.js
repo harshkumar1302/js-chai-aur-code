@@ -19,7 +19,7 @@ const myArr2 = new Array(1, 2, 3, 4, 5, 6);
 
 // Array methods
 
-// push pop
+// // push pop
 // myArr.push(99);  // this simply pushes or adds a new element at the end of the given array
 // myArr.push(7);
 // console.log(myArr);
@@ -47,18 +47,53 @@ const myArr2 = new Array(1, 2, 3, 4, 5, 6);
 
 // slice and splice
 
-console.log("A", myArr); // origonal array
-const mArr1 = myArr.slice(1, 3);  // array using slice
-console.log(mArr1);
+// console.log("A", myArr); // origonal array
+// const mArr1 = myArr.slice(1, 3);  // array using slice
+// console.log(mArr1);
 
 
-console.log("B", myArr);
-const mArr2 = myArr.splice(1, 3); // array using splice
-console.log("C", myArr); // using splice my original array changes
-console.log(mArr2);
-console.log(mArr1);
+// console.log("B", myArr);
+// const mArr2 = myArr.splice(1, 3); // array using splice
+// console.log("C", myArr); // using splice my original array changes
+// console.log(mArr2);
 
 
-// splice manupulates the original array by cutting out the the portion given in the argument of the splice method
-// whereas slice does not manupulates the original array
+// // splice manupulates the original array by cutting out the the portion given in the argument of the splice method
+// // whereas slice does not manupulates the original array
+
+
+
+// const marvelHeros = ["Ironman", "spiderman", "thor", "hulk"];
+// const dcHeros = ["superman", "batman", "flash", "aquaman"];
+
+// // marvelHeros.push(dcHeros); // this simply put the whole array inside the first array [elements,[elements]]
+// // console.log(marvelHeros); // push works on the existing array
+
+
+// const allHeros = marvelHeros.concat(dcHeros);  // concat creates an new array
+// console.log(allHeros);
+
+
+// const allHeros1 = [...marvelHeros, ...dcHeros]; // (...)spread operators
+// console.log(allHeros1)
+
+
+// const multipleArrays = [1, 2, 3, 4, [5, 6, 7], [8, 9, [0, 1, 5, 9]]];
+// console.log(multipleArrays);
+
+// // const simplifiedArray = multipleArrays.flat(1);
+// const simplifiedArray = multipleArrays.flat(Infinity);  // .flat() spread or simply return an new array with all sub array elements concatenated into it up to specified depth
+// console.log(simplifiedArray);
+
+
+console.log(Array.isArray("Harsh"));  // this checks whether the given data is an array or not
+console.log(Array.from("Harsh")); // this converts the given data into an array
+console.log(Array.from({ name: "Harsh" }));
+// this returns an empty array because it cannot convert it directly (because we have to tell it that from what we have to make an array key or value of the object)
+
+
+let score1 = 100;
+let score2 = 500;
+let score3 = 200;
+console.log(Array.of(score1, score2, score3)); // .of() returns a new array from a set of elements (it can be anything number, string, boolean....)
 
