@@ -8,12 +8,14 @@
 //     i += 2;
 // }
 
-let myArray = ["Superman", "flash", "Aquaman"];
-let arr = 0;
-while (arr < myArray.length) {
-    console.log(`the hero at ${arr + 1} is ${myArray[arr]}`);
-    arr++;
-}
+
+// let myArray = ["Superman", "flash", "Aquaman"];
+// let arr = 0;
+// // console.log(myArray.length)
+// while (arr < myArray.length) {
+//     console.log(`the hero at ${arr + 1} is ${myArray[arr].toLocaleUpperCase()}`);
+//     arr++;
+// }
 
 
 // do while = less used loop
@@ -29,10 +31,10 @@ while (arr < myArray.length) {
 //     score++;
 // } while (score <= 10);
 
-let score = 12;
+// let score = 12;
 
-do {
-    console.log(`Score = ${score}`)
-    score++;         // from here we can 12 but
-} while (score <= 10);  // when we check the condition we get it false so we do not let it loop
+// do {
+//     console.log(`Score = ${score}`)
+//     score++;         // from here we can 12 but
+// } while (score <= 10);  // when we check the condition we get it false so we do not let it loop
 

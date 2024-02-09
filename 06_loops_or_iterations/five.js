@@ -1,3 +1,5 @@
+// forEach
+
 // array.forEach(element => {
 // forEach syntax
 // });

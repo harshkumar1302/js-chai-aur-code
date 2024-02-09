@@ -28,7 +28,7 @@
 // }
 
 
-// for of on map = it is iterable
+// // for of on map = it is iterable
 
 // const map = new Map();
 // map.set("IN", "India");
@@ -52,8 +52,8 @@
 
 
 
-// for of on object = it is not iterable
-// we cannot access object directly by for of
+// // for of on object = it is not iterable
+// // we cannot access object directly by for of
 
 // const gaming = {
 //     game1: "NFS",

@@ -1,33 +1,40 @@
-// for(const key in object){
-// syntax for - for in    
-// }
-// for in for object = iterable
+// // forIn
+// // for(const key in object){
+// // syntax for - for in
+// // }
+// // for in for object = iterable
 
-const language = {
-    js: "javaScript",
-    rb: "Ruby",
-    cpp: "C++",
-    swift: "Swift by Apple"
-}
+// const language = {
+//     js: "javaScript",
+//     rb: "Ruby",
+//     cpp: "C++",
+//     swift: "Swift by Apple"
+// }
+
+
+// for (const key in language) {
+//     console.log(`${key}`)
+// }
+
+// for (const key in language) {
+//     console.log(`${language[key]}`)
+// }
 
 // for (const i in language) {
 //     console.log(`${i} = ${language[i]}`)
 // }
 
 
-for (const key in language) {
-    console.log(`${key} = ${language[key]}`)
-}
 
 
 
 // // for in for array = here we get key of an array key = index of array
 
-// const programming = ["js", "ruby", "cpp", "swift"];
+// const programming = ["js", "ruby", "cpp", "swift", "java"];
 
-// for (const key in programming) {
-//     console.log(key);
-// }
+// // for (const key in programming) {
+// //     console.log(key);
+// // }
 
 // for (const key in programming) {
 //     console.log(programming[key]);

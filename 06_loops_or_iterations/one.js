@@ -59,9 +59,9 @@
 
 
 // const myArray = ["flash", "superman", "batman", "aquaman"];
-
+// console.log(myArray.length)
 // for (let i = 0; i < myArray.length; i++) {
-//     let element = myArray[i];
+//     let element = myArray[i].toUpperCase();
 //     console.log(element)
 // }
 
