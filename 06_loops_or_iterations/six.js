@@ -13,8 +13,9 @@
 // })
 // console.log(newLang) // here we will get undefined 
 
-// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // // // there for we use filter
 // // // using filter
@@ -22,14 +23,14 @@
 // // console.log(newNums);
 
 
-// // // using forEach
-// // const newNum2 = []
-// // myNums.forEach((num) => {
-// //     if (num < 5) {
-// //         return newNum2.push(num);
-// //     }
-// // })
-// // console.log(newNum2);
+// // using forEach
+// const newNum2 = []
+// myNums.forEach((num) => {
+//     if (num < 5) {
+//         newNum2.push(num);
+//     }
+// })
+// console.log(newNum2);
 
 
 
@@ -63,14 +64,21 @@ const books = [
     }
 ]
 
-const userProfile = books.filter((book) => book.genre === 'Fiction')
-console.log(userProfile)
+// const userProfile = books.filter((book) => book.genre === 'Fiction')
+// console.log(userProfile)
 
-const userPro = [];
-books.forEach((item) => {
-    if (item.genre === 'Fiction') {
-        userPro.push(item.title);
-    }
-})
+// const bookAccordPublishYear = books.filter((book) => book.publish > 1990)
+// console.log(bookAccordPublishYear);
 
-console.log(`The user has these Books = ${userPro}`)
+const booksFilter1 = books.filter((book) => book.publish > 1990 && book.genre == "History")
+console.log(booksFilter1);
+
+
+// const userPro = [];
+// books.forEach((item) => {
+//     if (item.genre === 'Fiction') {
+//         userPro.push(item.title);
+//     }
+// })
+
+// console.log(`The user has these Books = ${userPro}`)
