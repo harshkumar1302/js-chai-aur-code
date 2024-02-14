@@ -8,5 +8,5 @@
 
 const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const arithmaticOperation = myNum.map((num) => num * 10).map((num1) => num1 - 5)
+const arithmaticOperation = myNum.map((num) => num * 10).map((num1) => num1 - 5).filter((num) => num >= 40)
 console.log(arithmaticOperation)
