@@ -22,6 +22,19 @@ buttons.forEach((button) => {
             body.style.backgroundColor = event.target.id
         }
 
-    })
+        // // using switch case
+        // switch (event.target.id) {
+        //     case "grey":
+        //     case "white":
+        //     case "blue":
+        //     case "yellow":
+        //     case "purple":
+        //         body.style.backgroundColor = event.target.id;
+        //         break;
+        //     default:
+        //         break;
+        // }
 
-})
+    });
+
+});
