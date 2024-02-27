@@ -13,45 +13,37 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName) {
+    function addLanguage(languageName) {
         const li = document.createElement("li");
-        li.innerHTML = `${langName}`;
-        // innerHTML first check weather there is anything named the same and then overrides it 
+        li.innerHTML = `${languageName}`;
         document.querySelector(".language").appendChild(li);
     }
 
-    // addLanguage("python");
-    // addLanguage("TypeScript");
+    addLanguage("Python");
+    addLanguage("TypeScript");
 
-
-    // best option to add as it is optimized by not needed to transverse the tree
-    // here it simply adds or create the text
-    function addOptiLanguage(langName) {
+    function optiLanguage(langName) {
         const li = document.createElement("li");
         li.appendChild(document.createTextNode(langName));
-        document.querySelector(".language").appendChild(li);
+        document.querySelector(".language").appendChild(li)
     }
-    addOptiLanguage("Python");
-    addOptiLanguage("TypeScript");
-    addOptiLanguage("golang");
 
-    // Edit
+    optiLanguage("GoLang");
 
-    const updateLang = document.querySelector("li:nth-child(2)");
-    // console.log(updateLang);
-    // updateLang.innerHTML = "Mojo";
+    // // Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
 
     const newLi = document.createElement("li");
     newLi.textContent = "Mojo";
-    updateLang.replaceWith(newLi);
+    secondLang.replaceWith(newLi);
 
-    // edit
+    // // edit short hand
+
     const lastLang = document.querySelector("li:last-child");
-    // console.log(lastLang);
     lastLang.outerHTML = "<li>Java</li>"
 
-
-    // remove 
+    // remove
     const removeLang = document.querySelector("li:last-child");
     removeLang.remove()
 </script>
