@@ -80,3 +80,27 @@ async function consumePromiseFive() {
 };
 
 consumePromiseFive();
+
+
+
+
+// async function consumePromiseSic() {
+//     try {
+//         const response = await fetch('https://api.github.com/users/harshkumar1302');
+//         // console.log(response);
+//         const data = await response.json();
+//         console.log(data)
+//     } catch (error) {
+//         console.log("E:", error)
+//     }
+// }
+
+
+// consumePromiseSic();
+
+
+
+fetch('https://api.github.com/users/harshkumar1302')
+    .then(response => response.json())
+    .then((data) => { console.log(data) })
+    .catch((error) => console.log(error))
