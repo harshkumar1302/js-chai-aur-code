@@ -25,24 +25,24 @@
 //     }
 // ];
 
-// // const getUnderGrad = names.filter((limit) => limit.age > 18);
-// // console.log(getUnderGrad);
+// const getUnderGrad = names.filter((limit) => limit.age > 18);
+// console.log(getUnderGrad);
 
-// function myLimit(limit) {
-//     return limit.age > 18;
-// }
+// // // function myLimit(limit) {
+// // //     return limit.age > 18;
+// // // }
 
-// // const getUnderGrad = myLimit(names);
-// Array.prototype.myFilter = function (myLimit) {
-//     const myArray = [];
-//     for (let i = 0; i < this.length; i++) {
-//         if (myLimit(this[i]))
-//             myArray.push(this[i]);
-//     }
-//     return myArray;
-// }
-// const drunk = names.myFilter(myLimit)
-// console.log(drunk)
+// // // // const getUnderGrad = myLimit(names);
+// // // Array.prototype.myFilter = function (myLimit) {
+// // //     const myArray = [];
+// // //     for (let i = 0; i < this.length; i++) {
+// // //         if (myLimit(this[i]))
+// // //             myArray.push(this[i]);
+// // //     }
+// // //     return myArray;
+// // // }
+// // // const drunk = names.myFilter(myLimit)
+// // // console.log(drunk)
 
 
 
