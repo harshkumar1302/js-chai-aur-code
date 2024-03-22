@@ -8,7 +8,7 @@ const user = {
     }
 }
 
-console.log(user.getUserDetails());
+// console.log(user.getUserDetails());
 
 
 function User(username, loginCount, signedIn) {
@@ -19,7 +19,7 @@ function User(username, loginCount, signedIn) {
     this.greetings = function () {
         return `Welcome: ${this.username}`
     }
-    return this;
+    return this; // no need for return it is implicitly returned
 }
 
 const userOne = new User("kumar", 6, true);

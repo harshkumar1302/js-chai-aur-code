@@ -53,7 +53,7 @@ promiseFour.then((user) => {
     console.log(username);
 }).catch((err) => {
     console.log(err)
-});
+}).finally(() => console.log('we have some output'));
 
 
 
@@ -87,7 +87,7 @@ consumePromiseFive();
 // async function consumePromiseSic() {
 //     try {
 //         const response = await fetch('https://api.github.com/users/harshkumar1302');
-//         // console.log(response);
+//         // // console.log(response);
 //         const data = await response.json();
 //         console.log(data)
 //     } catch (error) {

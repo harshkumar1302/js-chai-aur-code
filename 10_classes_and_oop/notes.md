@@ -8,7 +8,7 @@
 ## why use OOP
 
 ## parts of OOP
-
+- object literals
 
 
 - Constructor function
