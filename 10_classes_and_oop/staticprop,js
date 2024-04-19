@@ -1,0 +1,21 @@
+class User {
+    constructor(username) {
+        this.username = username;
+    }
+
+    logMe() {
+        console.log(`Username: ${this.username}`)
+    }
+
+    // here static doesn't allows any to use that particular method even to there childs
+
+    static createId() {
+        return `123`;
+    }
+}
+
+const harsh = new User("Harsh")
+harsh.logMe()
+// harsh.createId()
+// console.log(harsh.createId())
+console.log(harsh)
